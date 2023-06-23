@@ -1,0 +1,95 @@
+.trucalacon{
+    height: 100px;
+    width: 100%;
+    background-color: #A3C8F5;;
+}
+
+/* Le menue des légales */
+.mini_menu__banner{
+    background-color: #A3C8F5;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mini_menu__baseline{
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+.space{
+    width: 70%;
+    margin: auto;
+}
+.mini_menu__produit{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #200F8C;
+
+    padding-right: 30px;
+}
+.mini_menu__infos1{
+    transition: all 0.3s ease-out;
+}
+.mini_menu__infos1:hover, .mini_menu__infos1:focus{
+    color: white;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid white;
+}
+
+/* Pour décaler <p> informations legales <p> */
+
+.leg{
+    padding-left: 30px;
+}
+
+/* les informaitons */
+.legales__placement__titre{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.legales__placement{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.legales__grid{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.legales__text{
+    grid-column: 2;
+    grid-row: 1;
+}
+.legales__titre{
+    text-align: justify;
+    font-size: larger;
+
+    margin: 100px 0px 40px 150px;
+}
+.legales__corps{
+    font-size: medium;
+}
+.espace{
+    height: 250px;
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
