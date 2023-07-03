@@ -1,0 +1,146 @@
+.hauteur_menu{
+    height: 100px;
+    background-color: #A3C8F5;
+}
+/* permet just d'afficher la bare bleu ciel */
+.vitrine__menu{
+    background-color: #A3C8F5;
+    height: 75px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.vitrine__baseline{
+    color: white;
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+/* Les 2 bulles */
+.bulles__placement{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -40px;
+}
+/* test pour tronquer l'image avec lien (a) */
+/* .hidden{
+    overflow: hidden;
+} */
+.profile__bulles{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+    margin: 20px 20px 5px 20px;
+    border: 3px solid #200F8C;
+}
+.profile__bulles:hover{
+    border: 3px solid #5040bd;
+}
+.bulles__img{
+    width: 110%;
+    height: 110%;
+    margin-top: -20px;
+}
+.profile__comment{
+    text-align: center;
+    color:#200F8C;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* mini-menu */
+
+.mini_menu{
+    height: 40px;
+}
+.mini_menu__banner{
+    background-color: #A3C8F5;
+    height: 75px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mini_menu__baseline{
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: calc(3vmin + 20px);
+}
+
+
+/* Partie recherche */
+
+.recherche{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+.recherche__recherche{
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+}
+.rh{
+    height: 20px;
+}
+/* button */
+
+.recherche__buttonVerrif{
+    color: rgb(122, 122, 122);
+    background-color: #fff;
+    transition: all 1s ease-out;
+
+    border-radius: 50px;
+    border: 1px solid rgb(122, 122, 122);
+    padding: 6px 30px;
+    margin: 55px 15px 20px 15px;
+}
+
+.recherche__buttonVerrif:hover, .recherche__buttonVerrif:focus {
+    color: #fff;
+    background-color: #A3C8F5;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+
+/* Foliottage */
+
+.foliottage{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    flex-flow: nowrap;
+}
+.config{
+    color: black;
+    padding: 0px 15px;
+    margin: 0px 5px 20px 0px;
+    border: 0px solid white;
+    font-size: 20px;
+}
+.plus{
+    font-size: 15px;
+    margin: 2px 0px 0px 0px;
+}
+.config:hover{
+    box-shadow: 0px 2px 0px #200F8C;
+    color: #200F8C;
+    cursor: pointer;
+}
+
+
+
+
+.hiddenProduct{
+    display: none;
+}

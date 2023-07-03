@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vitrine.css">
+    <link rel="stylesheet" href="acceuil.css">
+    
+    <title>Raisine</title>
+</head>
+<body>
+    <head class="">
+        <div class="head">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html" class="none"><p class="logo__placement">LOGO PROVISOIR</p></a>
+            </div>
+            <!-- menu -->
+            <div class="head__block">
+                <nav class="head__centre">
+                    <a class="menu_principal ligne none" href="apropos.html">A Propos</a> 
+                    <a class="menu_principal ligne none" href="contact.html">Contact</a> 
+                    <a class="menu_principal ligne none" href="vitrine.html">Vitrine</a> 
+                    <a class="menu_principal ligne none" href="inscription.html">Mon compte</a> 
+                </nav>
+            </div>
+            <!-- image pannier -->
+            <div class="pannier">
+                <div class="pannier__placement">
+                    <img class="pannier__hover" src="ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+                </div>
+            </div>
+        </div>
+    </head>
+
+    <main>
+        <div class="hauteur_menu"></div>
+
+        <section>
+            <div class="vitrine__menu">
+                <p class="vitrine__baseline">Ofrez-vous un présent unique</p>
+            </div>
+            <div  class="bulles__placement">
+                <a href="vitrine_a.html" class="none">
+                    <div class="bulles">
+                        <li class="profile__bulles">
+                            <img src="ressources/deco.jpg" alt="" class="bulles__img">
+                        </li>
+                        <p class="profile__comment">Objets Déco</p>
+                    </div>
+                </a>
+
+                <a href="vitrine_b.html" class="none">
+                    <div class="bulles">
+                        <li class="profile__bulles">
+                            <img src="ressources/fonctionel.jpeg" alt="" class="bulles__img">
+                        </li>
+                        <p class="profile__comment">Objets fonctionels</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+        <section>  
+            <div class="mini_menu"></div>
+            <div class="mini_menu__banner">
+                <p class="mini_menu__baseline">Objets Fonctionels</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="recherche">
+                <!-- recherche -->
+                <div>
+                    <div class="recherche__recherche">
+                        <label for="recherche">Rechercher</label>
+                    </div>
+                    <div class="recherche__recherche">
+                        <input class="rh" type="text" name="recherche" id="recherche" placeholder="Un article ?"/>
+                    </div>
+                </div>
+                <!-- dérouler d'options -->
+
+                <!-- par prix -->
+                <div>
+                    <div class="recherche__recherche">
+                        <label for="recherche">Triller par prix</label>
+                    </div>
+                    <div class="recherche__recherche">
+                        <input class="recherche__couleur rh" id="recherche__couleur" list="prix" placeholder="↓ Choisissez ↓"/>
+                            <datalist  name="prix" id="prix">
+                                <option value="Prix croissant"></option>
+                                <option value="Prix décroissant"></option>
+                                <option value="non renseigné"></option>
+                            </datalist>
+                    </div>
+                </div>
+
+                <!-- par couleurs -->
+                <div>
+                    <div class="recherche__recherche">
+                        <label for="recherche">Triller par couleurs</label>
+                    </div>
+                    <div class="recherche__recherche">
+                        <input class="recherche__couleur rh" id="recherche__couleur" list="couleurs" placeholder="↓ Choisissez ↓"/>
+                            <datalist  name="couleurs" id="couleurs">
+                                <option value="Blanc"></option>
+                                <option value="Noir"></option>
+                                <option value="Bleu"></option>
+                                <option value="Violet"></option>
+                                <option value="Rose"></option>
+                                <option value="Rouge"></option>
+                                <option value="Vert"></option>
+                                <option value="Jaune"></option>
+                                <option value="Gris"></option>
+                                <option value="Maron"></option>
+                                <option value="Ocre"></option>
+                                <option value="Arc-en-ciel"></option>
+                                <option value="Trensparent"></option>
+                            </datalist>
+                    </div>
+                </div>
+
+                    <!-- par forme -->
+                <div>
+                    <div class="recherche__recherche">
+                        <label for="recherche">Triller par Forme</label>
+                    </div>
+                    <div class="recherche__recherche">
+                        <input class="recherche__forme rh" id="recherche__forme" list="forme" placeholder="↓ Choisissez ↓"/>
+                            <datalist  name="forme" id="forme">
+                                <option value="Salamandres"></option>
+                                <option value="Pieuvres"></option>
+                                <option value="Cranes"></option>
+                                <option value="Tortus"></option>
+                                <option value="Porte savons"></option>
+                                <option value="Boittes"></option>
+                                <option value="Bouchons"></option>
+                                <option value="Sous-verres"></option>
+                            </datalist>
+                    </div>
+                </div>
+                <div>
+                    <button class="recherche__buttonVerrif">Appliquer</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="gallery__center">
+            <ul class="gallery">
+
+                <li class="profile__product">
+                    <a href="produit.html" class="none" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul> 
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+
+
+
+
+
+                <li class="profile__product">
+                    <a href="produit.html" class="none" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul> 
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+
+                <li class="profile__product">
+                    <a href="produit.html" value="">
+                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                    <ul class="profile__side">
+                        <img class="like_it" src="ressources/coeur.png" alt=".">
+                    </ul>
+                    <div class="profile__info">
+                        <div class="profile__color"></div>
+                        <p class="profile__name">Infos produits</p>
+                        <p class="profile__price">5€</p>
+                        <button class="profile__see">Jeter un oeil</button>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        </section>
+
+        <section>
+            <div class="foliottage">
+                <div class="foliottage__1 config" id="">Pages   1</div>
+                <div class="foliottage__2 config" id="">2</div>
+                <div class="foliottage__3 config" id="">3</div>
+                <div class="foliottage__4 config" id="">4</div>
+                <div class="foliottage__5 config" id="">5</div>
+                <div class="foliottage__6 config plus" id="">►</div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="test"></div>
+
+    <footer>
+        <div class="grow"></div>
+        <div class="footer__placement">
+            <div class="footer">
+                <div class="B1">
+                    <a href="mentionlegales.html" class="none"><p>Mentions Légales</p></a>
+                    <br>
+                    <a href="mentionlegales.html" class="none"><p>Conditions Général de ventes</p></a>
+                </div>
+                <div class="B1">
+                    <p class="hov">Cookie</p>
+                    <br>
+                    <p class="hov">Copyright</p>
+                </div>
+                <div class="B3">
+                    <img src="ressources/instagram.png" alt="Instagram" width="40" height="40">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

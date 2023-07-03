@@ -1,0 +1,281 @@
+.trucalacon{
+    height: 100px;
+    width: 100%;
+
+}
+
+/* les indications génerales */
+
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: none; */
+}
+body{
+    /* background: -webkit-linear-gradient(45deg, #9f78fa,#73aedb,#79eff7);                       */
+    background: linear-gradient(45deg, #9f78fa,#73aedb,#79eff7); 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.placement{
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    position: relative;
+}
+form{
+    background: rgba(255,255,255,.3);
+    padding: 2rem 3rem;
+    border-radius: 20px;
+
+    width: 300px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    /* backdrop fait du floue en dessous (de 10px) */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,.2);
+    text-align: center;
+}
+.ombres{
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+input{
+    background: transparent;
+    border: none;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    padding: 7px 55px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 3px;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,.2);
+    color: white;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    transition: all .3s;
+}
+::placeholder{
+    color: white;
+}
+input:hover,
+input[type="email"]:focus,
+input[type="passeword"]:focus {
+    background: rgba(255,255,255,.1);
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,.2);
+}
+.drop{
+    background: rgba(255,255,255,.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    position: absolute;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,.2);
+}
+
+/* boite 1 blanc */
+/* .drop_1{
+    height: 80px; width: 80px; top: 40px; left: 90px;
+    z-index: -1;
+}
+.drop_1:hover{
+    z-index: 10;
+}
+.message_fond{
+    color: white;
+    text-align: center;
+    padding: 7px 0px;
+    margin: 5px;
+} */
+
+/* boite 2 blanc */
+/* .glissement_X{
+    transform: translateY(100%);
+    /*pour le mouvement vertical du fond bleu */
+    /* transition: transform 0.3s ease-in-out;
+}
+.drop_2{
+    height: 500px; width: 100px; top: 70px; left: 860px;
+    z-index: -1;
+}
+.inscription:hover .glissement_X{
+    transform: translateY(0);
+}  */
+
+
+
+
+/* partie de .connexion */
+
+.connexion{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+
+    padding: 3.5rem;
+    height: 500px;
+}
+.block__input{
+
+}
+.connexion__titre{
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    text-align: center; 
+}
+.co__question{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.co__co{
+    font-size: 1.4rem;
+}
+.connexion__email{
+
+}
+.co__email{
+    font-size: medium;
+}
+.connexion__mp{
+    font-size: medium;
+}
+.co__mp{
+    font-size: medium;
+}
+.connexion__btn{
+    color: #fff;
+    background-color: transparent;
+    transition: all 1s ease-out;
+    border: none;
+    border-radius: 50px;
+    
+    padding: 10px 30px;
+    margin: 10px 15px;
+
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,.5);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    font-size: medium;
+}
+
+.connexion__btn:hover, .connexion__btn:focus {
+    /* border: 1px solid rgba(32,15,140,.9); */
+    color: rgba(32,15,140,.9);
+    background-color: rgba(255,255,255,.3);
+}
+.mp__oubli{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+    transition: all .3s;
+}
+.mp__oubli:hover{
+    text-shadow: 2px 2px 5px rgba(0,0,0);
+}
+
+
+
+/* partie d'inscription */
+
+
+.inscription{
+    padding: 3.5rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+.inscription__input{
+
+}
+.warning{
+    color: #ca40ac;
+    top: -40px;
+    left: -200px;
+}
+.validation{
+    color: #3152c0;
+    font-size: 1.1rem;
+}
+.error{
+    color: #ca40ac;
+    font-size: 1.1rem;
+}
+.inscription__titre{
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.in_question_titre{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.in__in{
+    font-size: 1.4rem;
+    /* margin-top: 10px; */
+}
+.inscription__nom{
+    font-size: medium;
+}
+.inscription__prenom{
+    font-size: medium;
+}
+.inscription__dateBorn{
+    font-size: medium;
+    color: white;
+}
+.inscription__email{
+    font-size: medium;
+}
+.inscription__mp{
+    font-size: medium;
+}
+.inscription__mp_confirm{
+    font-size: medium;
+}
+.inscription__tel{
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

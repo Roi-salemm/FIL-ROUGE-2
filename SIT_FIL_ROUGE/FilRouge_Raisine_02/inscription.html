@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inscription.css">
+
+    <title>Raisine</title>
+</head>
+<body>
+    <head class="">
+        <div class="head">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="index.html" class="none"><p class="logo__placement">LOGO PROVISOIR</p></a>
+            </div>
+            <!-- menu -->
+            <div class="head__block">
+                <nav class="head__centre">
+                    <a class="menu_principal ligne none" href="apropos.html">A Propos</a> 
+                    <a class="menu_principal ligne none" href="contact.html">Contact</a> 
+                    <a class="menu_principal ligne none" href="vitrine_a.html">Vitrine</a> 
+                    <a class="menu_principal ligne none" href="inscription.html">Mon compte</a> 
+                </nav>
+            </div>
+            <!-- image pannier -->
+            <div class="pannier">
+                <div class="pannier__placement">
+                    <img class="pannier__hover" src="ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+                </div>
+            </div>
+        </div>
+
+    </head>
+    <main>
+
+        <div class="trucalacon"></div>
+
+        <section class="placement">
+            <section>
+                <!-- formulaire -->
+                <div class="connexion">
+                    <form action="#" method="post" id="listenToMe">
+                        <div class="block__input">
+                            <div class="connexion__titre">
+                                <p class="co_question ombres"> Nous connaissons nous déja ?</p>
+                                <br>
+                                <p class="co__co ombres">CONNEXION</p>
+                                <br>
+                            </div>
+
+                            <div class="connexion__email">
+                                <div class="block__inputDroite">
+                                    <input type="text" name="co__email" id="co__email" class="co__email" placeholder="E-mail"/>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="connexion__mp">
+                                <div class="block__inputDroite">
+                                    <input type="password" name="contacte" id="contacte" class="co__mp" placeholder="Mots de passe"/>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="connexion__btn">Connexion</button>
+                            <a href="compte.html">Page du compte Client</a>
+                            <br>
+                            <a href="#" class="mp__oubli ombres">Mot de passe oublié ?</a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div class="inscription">
+                    <form action="#" method="post" id="inscription_submit">
+                        <div class="inscription__input">
+                            <div class="inscription__titre">
+                                <p class="in_question_titre ombres">Faisons connaissance !</p>
+                                <p class="in__in ombres">INSCRIPTION</p>
+                            </div>
+                            <div class="">
+                                <input type="text" name="nom" id="nom" class="inscription__nom" placeholder="Nom"/>
+                                <p id="wrong_nom" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="text" name="prenom" id="prenom" class="inscription__prenom" placeholder="Prenom"/>
+                                <p id="wrong_prenom" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="date" name="datBorn" id="datBorn" class="inscription__dateBorn" placeholder="Date de Naissance"/>
+                                <p id="wrong_datborn" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="email" name="email" id="email" class="inscription__email" placeholder="E-mail"/>
+                                <p id="wrong_email" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="password" name="mp" id="mp" class="inscription__mp" placeholder="Mot de passe"/>
+                                <p id="wrong_mp" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="text" name="mp_confirm" id="mp_confirm" class="inscription__mp_confirm" placeholder="Confirmation du mot de passe"/>
+                                <p id="wrong_mp_confirm" class="warning"></p>
+                            </div>
+                            <br>
+                            <div class="">
+                                <input type="text" name="tel" id="tel" class="inscription__tel" placeholder="Numero de Télephone"/>
+                                <p id="wrong_tel" class="warning"></p>
+                            </div>
+                            <br>
+                            <button type="submit" class="connexion__btn" id="save">Enregistré</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <!-- ombres -->
+                <!-- <div>
+                    <div class="drop drop_1">
+                        <p class="message_fond">WE <br>LOVE <br>YOU</p>
+                    </div>
+                    <li class="glissement_X"><div class="drop drop_2"></div></li>
+                    <div class="drop drop_3"></div>
+                    <div class="drop drop_4"></div>
+                    <div class="drop drop_5"></div>
+                </div> -->
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="grow"></div>
+        <div class="footer__placement">
+            <div class="footer">
+                <div class="B1">
+                    <a href="mentionlegales.html" class="none"><p>Mentions Légales</p></a>
+                    <br>
+                    <a href="mentionlegales.html" class="none"><p>Conditions Général de ventes</p></a>
+                </div>
+                <div class="B1">
+                    <p class="hov">Cookie</p>
+                    <br>
+                    <p class="hov">Copyright</p>
+                </div>
+                <div class="B3">
+                    <img src="ressources/instagram.png" alt="Instagram" width="40" height="40">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="inscription.js"></script>
+</body>
+</html>  

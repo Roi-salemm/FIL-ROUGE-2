@@ -1,0 +1,130 @@
+
+/* mini-menu */
+.haut__couleur{
+    height: 100px;
+    width: 100%;
+    background-color: #A3C8F5;
+}
+
+.mini_menu__banner{
+    background-color: #A3C8F5;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.mini_menu__baseline{
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+.space{
+    width: 70%;
+    margin: auto;
+}
+.mini_menu__produit{
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    color: #200F8C;
+}
+.mini_menu__infos1{
+    transition: all 0.3s ease-out;
+}
+.mini_menu__infos1:hover, .mini_menu__infos1:focus{
+    color: white;
+    padding: 0px 0px 5px 0px;
+    border-bottom: 1px solid white;
+}
+
+/* présentation produit */
+.grid__produit__haut{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 4fr 3fr 2fr;
+}
+.haut{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+}
+.arriere{
+    font-size: 30px;
+    color: #200F8C;
+    margin-top: 10px;
+}
+.arriere:hover{
+    /* color: white; */
+}
+
+/* Les images */
+.haut__lesImages{
+    display: flex;
+    flex-direction: column;
+}
+.produit__images{
+    width: 88px;
+    height: 88px;
+    border-radius: 10px;
+    margin: 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+.produit__grandeImage{
+    width: 480px;
+    height: 480px;
+    border-radius: 20px;
+}
+
+/* Texte aside */
+.seting__titreProduit{
+    font-size: 28px;   
+    text-align: justify;
+    font-weight: 200;
+}
+.seting__prix{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 200;
+}
+.seting__présentation{
+    text-align: justify;
+    font-size: medium;
+    font-weight: 200;
+}
+.haut__textPresentation{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.seting{
+    margin-left: 20px;
+}
+
+/* Article du produit */
+
+.bas{
+    width: 70%;
+    margin: auto;
+}
+.grid__produit__bas{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+.bas__seting{
+    margin: 20px;
+    text-align: justify;
+    font-size: medium;
+}
+
+/* hover */
+
+.produit__images:hover, .produit__images:focus{
+    background-color: (255, 255, 255, 0.2);
+    border-bottom: 3px solid #A3C8F5;
+}
+
