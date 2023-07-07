@@ -85,37 +85,6 @@ input[type="passeword"]:focus {
     box-shadow: 10px 10px 60px -8px rgba(0,0,0,.2);
 }
 
-/* boite 1 blanc */
-/* .drop_1{
-    height: 80px; width: 80px; top: 40px; left: 90px;
-    z-index: -1;
-}
-.drop_1:hover{
-    z-index: 10;
-}
-.message_fond{
-    color: white;
-    text-align: center;
-    padding: 7px 0px;
-    margin: 5px;
-} */
-
-/* boite 2 blanc */
-/* .glissement_X{
-    transform: translateY(100%);
-    /*pour le mouvement vertical du fond bleu */
-    /* transition: transform 0.3s ease-in-out;
-}
-.drop_2{
-    height: 500px; width: 100px; top: 70px; left: 860px;
-    z-index: -1;
-}
-.inscription:hover .glissement_X{
-    transform: translateY(0);
-}  */
-
-
-
 
 /* partie de .connexion */
 

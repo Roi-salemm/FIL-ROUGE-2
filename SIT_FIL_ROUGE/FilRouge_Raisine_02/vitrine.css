@@ -91,6 +91,11 @@
 .rh{
     height: 20px;
 }
+.suggestion__Ul{
+    font-size: small;
+    color: gray;
+    margin-top: 5px;
+}
 /* button */
 
 .recherche__buttonVerrif{

@@ -105,6 +105,37 @@
     margin-left: 20px;
 }
 
+.addBasket__btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    color: #fff;
+    background-color: #79a7f7;
+    transition: all 1s ease-out;
+    border: none;
+    border-radius: 50px;
+    
+    padding: 10px 30px;
+    margin: 10px 0px;
+
+    box-shadow: 10px 10px 60px -8px rgba(0,0,0,.5);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+    font-size: medium;
+}
+
+.addBasket__btn:hover {
+    /* border: 1px solid rgba(32,15,140,.9); */
+    color: rgba(32,15,140,.9);
+    background-color: rgba(255,255,255,.3);
+}
+.addBasket__btn:active{
+    color: rgba(26, 10, 132, 0.9);
+    background-color: rgba(180, 203, 250, 0.3);
+}
+
+
 /* Article du produit */
 
 .bas{

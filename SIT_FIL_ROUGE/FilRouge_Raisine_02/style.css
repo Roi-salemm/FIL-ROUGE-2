@@ -316,13 +316,13 @@ footer{
     flex-direction: row;
     padding: 30px;
 }
-.hov{
+/* .hov{
     transition-duration: 3s;
     transition-property: margin ;
 }
 .hov:hover{
     margin: 10px;
-}
+} */
 
 
 
@@ -371,7 +371,7 @@ footer{
 /*______________________*/
 
 
-/*Super button pour ajouter au pannier*/
+/*Super button */
 
 /* .supper_button {
     color: #fff;

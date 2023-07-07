@@ -120,7 +120,7 @@ document.body.appendChild(header);
 var espace = document.createElement('div');
 espace.className = 'trucalacon';
 
-var espaceStyle = document.querySelector(".trucalacon");
+// var espaceStyle = document.querySelector(".trucalacon");
 
 document.body.appendChild(espace);
 
@@ -166,6 +166,7 @@ divMenuClient.appendChild(document.createElement('br'));
 // Créer un lien <a> pour "Mes Informations"
 var lienMesInformations = document.createElement('a');
 lienMesInformations.href = 'compte/mesinformation.html';
+
 var divMesInformations = document.createElement('div');
 divMesInformations.className = 'info';
 divMesInformations.textContent = 'Mes Informations';
@@ -179,6 +180,7 @@ divMenuClient.appendChild(document.createElement('br'));
 // Créer un lien <a> pour "Bon plans"
 var lienBonPlans = document.createElement('a');
 lienBonPlans.href = 'compte/bonplan.html';
+
 var divBonPlans = document.createElement('div');
 divBonPlans.className = 'bonPlans';
 divBonPlans.textContent = 'Bon plans';
@@ -192,6 +194,7 @@ divMenuClient.appendChild(document.createElement('br'));
 // Créer un lien <a> pour "Historique de commandes"
 var Historique = document.createElement('a');
 Historique.href = 'compte/historique.html';
+
 var divHistorique = document.createElement('div');
 divHistorique.className = 'historique';
 divHistorique.textContent = 'Historique de commandes';
@@ -381,14 +384,13 @@ document.body.appendChild(footer);
 
 // Le CSS de la partie Body
 
-// let espaceStyle = document.querySelector('.espaceStyle');
+// let espaceStyle = document.getElementsByClassName('.espaceStyle');
 // espaceStyle.style.height = "50px";
 // espaceStyle.style.width = '100%';
 
 let centre = document.querySelector('.centre');
 centre.style.width = '80%';
 centre.style.margin = 'auto';
-
 
 let menuClient = document.querySelector('.menuClient');
 menuClient.style.height = '500px';
@@ -406,6 +408,7 @@ menuClient.style.borderLeft = '1px solid rgba(255, 255, 255, 0.3)';
 menuClient.style.borderTop = '1px solid rgba(255, 255, 255, 0.3)';
 menuClient.style.flexDirection = 'column';
 menuClient.style.flexWrap = 'wrap';
+menuClient.style.marginTop = '130px';
 
 let menuClient__bienvenu2 = document.querySelector('.menuClient__bienvenu');
 menuClient__bienvenu2.style.textAlign = 'center';
@@ -426,33 +429,34 @@ h3.style.marginTop = '15px';
 // this.style.color = '#c9c9c9';
 // });
 
+
 let infoElement = document.querySelector('.info')
 infoElement.style.color = 'white';
 infoElement.style.fontSize = '20px';
 infoElement.style.margin = '0px 15px';
 infoElement.style.padding = '10px';
-infoElement.style.textDecoration = 'none';
+infoElement.parentNode.style.textDecoration = 'none';
 
 let bonPlans2 = document.querySelector('.bonPlans');
 bonPlans2.style.color = '#ffffff';
 bonPlans2.style.fontSize = '20px';
 bonPlans2.style.margin = '0px 15px';
 bonPlans2.style.padding = '10px';
-bonPlans2.style.textDecoration = 'none';
+bonPlans2.parentNode.style.textDecoration = 'none';
 
 let historique = document.querySelector('.historique');
 historique.style.color = 'white';
 historique.style.fontSize = '20px';
 historique.style.margin = '0px 15px';
 historique.style.padding = '10px';
-historique.style.textDecoration = 'none';
+historique.parentNode.style.textDecoration = 'none';
 
 let deconnexion = document.querySelector('.deconnexion');
 deconnexion.style.color = '#ffffff';
 deconnexion.style.fontSize = '20px';
 deconnexion.style.margin = '0px 15px';
 deconnexion.style.padding = '10px';
-deconnexion.style.textDecoration = 'none';
+deconnexion.parentNode.style.textDecoration = 'none';
 
 
 let petitbug = document.querySelector('.petitbug');

@@ -13,7 +13,7 @@
     <title>Raisine</title>
 </head>
 <body>
-    <head class="">
+    <header class="">
         <div class="head">
             <!-- LOGO -->
             <div class="logo">
@@ -31,11 +31,32 @@
             <!-- image pannier -->
             <div class="pannier">
                 <div class="pannier__placement">
-                    <img class="pannier__hover" src="../ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <img onclick="ouvrirPopup()" class="pannier__hover" src="../ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <div id="popupContainer" class="popup">
+                        <div class="zero__0">Votre Pannier Actuel</div>
+                        <div class="popup__grid">
+
+                            <div class="one__3 rowSpace">Produit</div>
+                            <div class="one__4 rowSpace">Prix</div>
+                            <div class="one__5 rowSpace">Quantité</div>
+                            <div class="one__6 rowSpace">Total</div>
+
+                            <div class="two__1 rowSpace">X</div>
+                            <div class="two__2 rowSpace"><img src="" alt="image"></div>
+                            <div class="two__3 rowSpace">Salamandre</div>
+                            <div class="two__4 rowSpace">6.50€</div>
+                            <div class="two__5 rowSpace">1</div>
+                            <div class="two__6 rowSpace">6.50€</div>
+                        </div>
+                        <button onclick="fermerPopup()" class="fermerPopup">Fermer</button>
+                        <button onclick="fermerPopup()" class="fermerPopup">Continuer la commande</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </head>
+    </header>
 
     <main>
         <div class="trucalacon"></div>
@@ -54,16 +75,61 @@
                     <a href="../compte/bonplan.html"><div class="bonPlans">Bon plans</div></a>
                     <br>
                     <br>
-                    <a href="../compte/historique.html"><div class="historique"><h2>Historique de commandes</h2></div></a>
+                    <a href="../compte/historique.html"><div class="historique">Historique de commandes</div></a>
                     <br>
                     <br>
-                    <div class="deconnexion"><h2>Déconnexion</h2></div>
+                    <a href="../index.html" ><div class="deconnexion">Déconnexion</div></a>
                 </div>
+            </section>
 
+            <section>
+                <div class="mesInformations">
+                    <h1>Informations Utilisateur</h1>
+                    <div class="user-info">
+
+                        <div class="user-info__row">
+                            <p>Nom : <span id="nom"></span></p> 
+                            <p class="btn__modif" id="modifierNom">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Prénom : <span id="prenom"></span></p>
+                            <p class="btn__modif" id="modifierPrenom">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Adresse : <span id="adresse"></span></p>
+                            <p class="btn__modif" id="modifierAdresse">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Code Postal : <span id="cp"></span></p>
+                            <p class="btn__modif" id="modifierCp">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Ville : <span id="ville"></span></p>
+                            <p class="btn__modif" id="modifierVille">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Numero de telephone : <span id="tel"></span></p>
+                            <p class="btn__modif" id="modifierTel">Modifier</p>
+                        </div>
+
+                        <div class="user-info__row">
+                            <p>Date de Naissance : <span id="date"></span></p>
+                            <p class="btn__modif" id="modifierDate">Modifier</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
 
             </section>
         </section>
-
+        <script src="compteClient.js"></script>
     </main>
 
     <footer>
@@ -87,6 +153,6 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

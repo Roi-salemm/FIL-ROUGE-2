@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../compte.css">
-    <link rel="stylesheet" href="../compte/historique.css">
-    
+    <link rel="stylesheet" href="panier_paiment.css">
 
     <title>Raisine</title>
 </head>
@@ -58,34 +56,55 @@
         </div>
     </header>
 
+
     <main>
         <div class="trucalacon"></div>
-        <section class="centre">
-            <section>
-                <div class="menuClient">
-                    <div class="menuClient__bienvenu"><h3>Hey !!</h3></div>
-                    <div class="menuClient__bienvenu"><h3>Bonjour M.Dupont</h3></div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="../compte/mesinformation.html"><div class="info">Mes Informations</div></a>
-                    <br>
-                    <br>
-                    <a href="../compte/bonplan.html"><div class="bonPlans">Bon plans</div></a>
-                    <br>
-                    <br>
-                    <a href="../compte/historique.html"><div class="historique signalement">Historique de commandes</div></a>
-                    <br>
-                    <br>
-                    <a href="../index.html" ><div class="deconnexion">Déconnexion</div></a>
+        <section>  
+            <!-- la partie bleu ciel avec le sous menu -->
+            <div class="mini_menu__banner">
+                <div>
+                    <p class="mini_menu__baseline leg">Passez commande simplement en 3 étapes</p>
                 </div>
-
-
-            </section>
+                <div class="space">
+                    <div class="mini_menu__produit">
+                        <a class="none" href="#legales"><p class="mini_menu__infos1 souligne">Articles du pannier</p></a>
+                        <br>
+                        <a class="none" href="#vente"><p class="mini_menu__infos1">Informations</p></a>
+                        <br>
+                        <a class="none" href="#cookie"><p class="mini_menu__infos1">Validation et paiment</p></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="centre">
+            <div class="pannier__all">
+                <div class="zero__0__pannier">Votre pannier</div>
+                <div class="pannier__grid">
+                    <div class="one__3 rowSpace border__ligne">Produit</div>
+                    <div class="one__4 rowSpace border__ligne">Prix</div>
+                    <div class="one__5 rowSpace border__ligne">Quantité</div>
+                    <div class="one__6 rowSpace border__ligne">Sous-Total</div>
+                    
+                    <!-- <div class="two__1 rowSpace border__ligne">X</div> -->
+                    <div class="two__2 rowSpace border__ligne"><img src="../ressources/pasteImage1679588884375.jpeg" alt="image" width="30px" height="30px"></div>
+                    <div class="two__3 rowSpace border__ligne">Salamandre</div>
+                    <div class="two__4 rowSpace border__ligne">6.50€</div>
+                    <div class="two__5 rowSpace border__ligne">1</div>
+                    <div class="two__6 rowSpace border__ligne">6.50€</div>
+                </div>
+                <div>><button class="fermerPopup">Rafréchire le pannier</button></div>
+            </div>
+            <div class="total__fix">
+
+            </div>
+
+        </section>
+
+
+
     </main>
+
 
     <footer>
         <div class="grow"></div>
@@ -106,6 +125,9 @@
                 </div>
             </div>
         </div>
+        <section>
+            <div></div>
+        </section>
     </footer>
     
     <script src="../script.js"></script>

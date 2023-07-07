@@ -12,7 +12,7 @@
     <title>Raisine</title>
 </head>
 <body>
-    <header class="">
+    <header class="" id="ici">
         <div class="head">
             <!-- LOGO -->
             <div class="logo">
@@ -33,26 +33,6 @@
 
                     <img onclick="ouvrirPopup()" class="pannier__hover" src="ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
 
-                    <div id="popupContainer" class="popup">
-                        <div class="zero__0">Votre Pannier Actuel</div>
-                        <div class="popup__grid">
-
-                            <div class="one__3 rowSpace">Produit</div>
-                            <div class="one__4 rowSpace">Prix</div>
-                            <div class="one__5 rowSpace">Quantité</div>
-                            <div class="one__6 rowSpace">Total</div>
-
-                            <div class="two__1 rowSpace">X</div>
-                            <div class="two__2 rowSpace"><img src="" alt="image"></div>
-                            <div class="two__3 rowSpace">Salamandre</div>
-                            <div class="two__4 rowSpace">6.50€</div>
-                            <div class="two__5 rowSpace">1</div>
-                            <div class="two__6 rowSpace">6.50€</div>
-                        </div>
-                        <button onclick="fermerPopup()" class="fermerPopup">Fermer</button>
-                        <button onclick="fermerPopup()" class="fermerPopup">Continuer la commande</button>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -63,7 +43,7 @@
 
         <section>
             <div class="vitrine__menu">
-                <p class="vitrine__baseline">Ofrez-vous un présent unique</p>
+                <p class="vitrine__baseline">Offrez-vous un présent unique</p>
             </div>
             <div  class="bulles__placement">
                 <a href="vitrine_a.html" class="none">
@@ -102,6 +82,7 @@
                     </div>
                     <div class="recherche__recherche">
                         <input class="rh" type="text" name="recherche" id="recherche" placeholder="Un article ?"/>
+                        <ul id="autocompleteList" class="suggestion__Ul"></ul>
                     </div>
                 </div>
                 <!-- dérouler d'options -->
@@ -109,14 +90,14 @@
                 <!-- par prix -->
                 <div>
                     <div class="recherche__recherche">
-                        <label for="recherche">Triller par prix</label>
+                        <label for="recherche">Trier par prix</label>
                     </div>
+
                     <div class="recherche__recherche">
-                        <input class="recherche__prix rh" id="recherche__prix" list="prix" placeholder="↓ Choisissez ↓"/>
-                            <datalist  name="prix" id="prix">
-                                <option value="Prix croissant"></option>
-                                <option value="Prix décroissant"></option>
-                                <option value="non renseigné"></option>
+                        <input type="text" list="sortOptions" id="sortOption" class="rh" placeholder="↓ Choisissez ↓"/>
+                            <datalist  name="prix" id="sortOptions">
+                                <option value="prix croissant"></option>
+                                <option value="prix décroissant"></option>
                             </datalist>
                     </div>
                 </div>
@@ -124,25 +105,25 @@
                 <!-- par couleurs -->
                 <div>
                     <div class="recherche__recherche">
-                        <label for="recherche">Triller par couleurs</label>
+                        <label for="recherche">Trier par couleurs</label>
                     </div>
                     <div class="recherche__recherche">
                         <!-- onchange="filtrerCouleurs()" -->
-                        <input type="text" list="couleurs" id="choixCouleur" id="recherche__couleur"  class="recherche__couleur rh" placeholder="↓ Choisissez ↓" value=""/>
-                            <datalist  name="couleurs" id="couleurs" class="truc_test">
-                                <option value="Blanc"></option>
-                                <option value="Noir"></option>
-                                <option value="Bleu"></option>
-                                <option value="Violet"></option>
-                                <option value="Rose"></option>
-                                <option value="Rouge"></option>
-                                <option value="Vert"></option>
-                                <option value="Jaune"></option>
-                                <option value="Gris"></option>
-                                <option value="Maron"></option>
-                                <option value="Ocre"></option>
-                                <option value="Arc-en-ciel"></option>
-                                <option value="Trensparent"></option>
+                        <input type="text" list="colorOptions" id="colorOption" class="recherche__couleur rh" placeholder="↓ Choisissez ↓" value=""/>
+                            <datalist  name="couleurs" id="colorOptions">
+                                <option value="blanc"></option>
+                                <option value="noir"></option>
+                                <option value="bleu"></option>
+                                <option value="violet"></option>
+                                <option value="rose"></option>
+                                <option value="rouge"></option>
+                                <option value="vert"></option>
+                                <option value="jaune"></option>
+                                <option value="gris"></option>
+                                <option value="maron"></option>
+                                <option value="ocre"></option>
+                                <option value="arc-en-ciel"></option>
+                                <option value="trensparent"></option>
                             </datalist>
                     </div>
                 </div>
@@ -150,342 +131,36 @@
                     <!-- par forme -->
                 <div>
                     <div class="recherche__recherche">
-                        <label for="recherche">Triller par Forme</label>
+                        <label for="recherche">Trier par Forme</label>
                     </div>
                     <div class="recherche__recherche">
-                        <input class="recherche__forme rh" id="recherche__forme" list="forme" placeholder="↓ Choisissez ↓"/>
-                            <datalist  name="forme" id="forme">
-                                <option value="Salamandres"></option>
-                                <option value="Pieuvres"></option>
-                                <option value="Cranes"></option>
-                                <option value="Tortus"></option>
-                                <option value="Porte savons"></option>
-                                <option value="Boittes"></option>
-                                <option value="Bouchons"></option>
-                                <option value="Sous-verres"></option>
+                        <input type="text" list="shapeOptions" id="shapeOption" class="rh" placeholder="↓ Choisissez ↓"/>
+                            <datalist  name="forme" id="shapeOptions">
+                                <option value="salamandres"></option>
+                                <option value="pieuvres"></option>
+                                <option value="cranes"></option>
+                                <option value="tortus"></option>
+                                <option value="porte savons"></option>
+                                <option value="boittes"></option>
+                                <option value="bouchons"></option>
+                                <option value="sous-verres"></option>
                             </datalist>
                     </div>
                 </div>
                 <div>
-                    <button class="recherche__buttonVerrif">Appliquer</button>
+                    <button id="validateButton" class="recherche__buttonVerrif">Appliquer</button>
                 </div>
-
             </div>
 
         </section>
 
         <section class="gallery__center">
             <ul class="gallery">
-
-                <li class="profile__product rouge salamandres">
-                    <a href="produit.html" class="none" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul> 
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">5€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product vert">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">19€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product bleu">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">10€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product blanc">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">5€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product noir salamandres">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">8€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-
-
-                <li class="profile__product rose">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">4€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product jaune">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">5€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product gris">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">6€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product salamandres">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">7€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">10€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-
-
-
-
-
-                <li class="profile__product">
-                    <a href="produit.html" class="none" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul> 
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">3€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">5€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">1€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">12€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">33€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">64€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">7€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">21€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">3€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-
-                <li class="profile__product">
-                    <a href="produit.html" value="">
-                    <img src="ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
-                    <ul class="profile__side">
-                        <img class="like_it" src="ressources/coeur.png" alt=".">
-                    </ul>
-                    <div class="profile__info">
-                        <div class="profile__color"></div>
-                        <p class="profile__name">Infos produits</p>
-                        <p class="profile__price">5€</p>
-                        <button class="profile__see">Jeter un oeil</button>
-                    </div>
-                    </a>
-                </li>
-            </ul>
+                <!-- ici les li cree par js -->
+            </ul> 
+            <div class="">
+                <p id="ifNoCorrespondance"></p>
+            </div>
         </div>
 
         </section>
@@ -501,7 +176,26 @@
             </div>
         </section>
 
+        <!-- Pop-up  -->
+        <div id="popupContainer" class="popup">
+            <div class="zero__0">Votre Pannier Actuel</div>
+            <div class="popup__grid">
 
+                <div class="one__3 rowSpace">Produit</div>
+                <div class="one__4 rowSpace">Prix</div>
+                <div class="one__5 rowSpace">Quantité</div>
+                <div class="one__6 rowSpace">Total</div>
+
+                <div class="two__1 rowSpace">X</div>
+                <div class="two__2 rowSpace"><img src="ressources/pasteImage1679588884375.jpeg" alt="image" height="30px" width="30px"></div>
+                <div class="two__3 rowSpace">Salamandre</div>
+                <div class="two__4 rowSpace">6.50€</div>
+                <div class="two__5 rowSpace">1</div>
+                <div class="two__6 rowSpace">6.50€</div>
+            </div>
+            <button onclick="fermerPopup()" class="fermerPopup">Fermer</button>
+            <a href="paiment/panier_un.html"><button class="fermerPopup">Continuer la commande</button></a>
+        </div>
     </main>
 
     <footer>
@@ -526,6 +220,7 @@
     </footer>
     
     <script src="script.js"></script>
-    <script src="trie_produit.js"></script>
+    <script src="liByClass.js"></script>
+    <!-- <script src="trie_produit.js"></script> -->
 </body>
 </html>

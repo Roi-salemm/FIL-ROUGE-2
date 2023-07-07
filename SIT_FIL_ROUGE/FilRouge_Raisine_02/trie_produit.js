@@ -1,6 +1,3 @@
-
-
-
 //^    #    ALL    #
 //& 1 - Au click du button 
 let appliquerR = document.querySelector('.recherche__buttonVerrif');
@@ -51,21 +48,7 @@ function TrieAll(){
         const prixDecroissant = aPrice.sort((a, b) => b - a);
         console.log(prixDecroissant);
     }
-
 };
-
-
-function ouvrirPopup() {
-    var popup = document.getElementById('popupContainer');
-    popup.style.display = 'block';
-}
-function fermerPopup() {
-    var popup = document.getElementById('popupContainer');
-    popup.style.display = 'none';
-}
-
-
-
 
 
 

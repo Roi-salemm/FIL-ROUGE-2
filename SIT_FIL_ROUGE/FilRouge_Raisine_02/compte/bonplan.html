@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../compte.css">
     <link rel="stylesheet" href="../compte/bonplan.css">
-    
+    <link rel="stylesheet" href="../acceuil.css">
 
     <title>Raisine</title>
 </head>
 <body>
-    <head class="">
+    <header class="">
         <div class="head">
             <!-- LOGO -->
             <div class="logo">
@@ -31,16 +31,37 @@
             <!-- image pannier -->
             <div class="pannier">
                 <div class="pannier__placement">
-                    <img class="pannier__hover" src="../ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <img onclick="ouvrirPopup()" class="pannier__hover" src="../ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <div id="popupContainer" class="popup">
+                        <div class="zero__0">Votre Pannier Actuel</div>
+                        <div class="popup__grid">
+
+                            <div class="one__3 rowSpace">Produit</div>
+                            <div class="one__4 rowSpace">Prix</div>
+                            <div class="one__5 rowSpace">Quantité</div>
+                            <div class="one__6 rowSpace">Total</div>
+
+                            <div class="two__1 rowSpace">X</div>
+                            <div class="two__2 rowSpace"><img src="" alt="image"></div>
+                            <div class="two__3 rowSpace">Salamandre</div>
+                            <div class="two__4 rowSpace">6.50€</div>
+                            <div class="two__5 rowSpace">1</div>
+                            <div class="two__6 rowSpace">6.50€</div>
+                        </div>
+                        <button onclick="fermerPopup()" class="fermerPopup">Fermer</button>
+                        <button onclick="fermerPopup()" class="fermerPopup">Continuer la commande</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </head>
+    </header>
 
     <main>
         <div class="trucalacon"></div>
         <section class="centre">
-            <section>
+            <section class="menuClient__position">
                 <div class="menuClient">
                     <div class="menuClient__bienvenu"><h3>Hey !!</h3></div>
                     <div class="menuClient__bienvenu"><h3>Bonjour M.Dupont</h3></div>
@@ -54,15 +75,82 @@
                     <a href="../compte/bonplan.html"><div class="bonPlans signalement">Bon plans</div></a>
                     <br>
                     <br>
-                    <a href="../compte/historique.html"><div class="historique"><h2>Historique de commandes</h2></div></a>
+                    <a href="../compte/historique.html"><div class="historique">Historique de commandes</div></a>
                     <br>
                     <br>
-                    <div class="deconnexion"><h2>Déconnexion</h2></div>
+                    <a href="../index.html" ><div class="deconnexion">Déconnexion</div></a>
                 </div>
 
 
             </section>
+
+            <section class="pourClientBonPlan">
+                <ul class="pourClientBonPlan__listeProduits">
+
+                    <li class="profile__product vert">
+                        <a href="produit.html" value="">
+                        <img src="../ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                        <ul class="profile__side">
+                            <img class="like_it" src="../ressources/coeur.png" alt=".">
+                        </ul>
+                        <div class="profile__info">
+                            <div class="profile__color"></div>
+                            <p class="profile__name">Infos produits</p>
+                            <p class="profile__price">19€</p>
+                            <button class="profile__see">Jeter un oeil</button>
+                        </div>
+                        </a>
+                    </li>
+    
+                    <li class="profile__product bleu">
+                        <a href="produit.html" value="">
+                        <img src="../ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                        <ul class="profile__side">
+                            <img class="like_it" src="../ressources/coeur.png" alt=".">
+                        </ul>
+                        <div class="profile__info">
+                            <div class="profile__color"></div>
+                            <p class="profile__name">Infos produits</p>
+                            <p class="profile__price">10€</p>
+                            <button class="profile__see">Jeter un oeil</button>
+                        </div>
+                        </a>
+                    </li>
+
+                    <li class="profile__product vert">
+                        <a href="produit.html" value="">
+                        <img src="../ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                        <ul class="profile__side">
+                            <img class="like_it" src="../ressources/coeur.png" alt=".">
+                        </ul>
+                        <div class="profile__info">
+                            <div class="profile__color"></div>
+                            <p class="profile__name">Infos produits</p>
+                            <p class="profile__price">19€</p>
+                            <button class="profile__see">Jeter un oeil</button>
+                        </div>
+                        </a>
+                    </li>
+    
+                    <li class="profile__product bleu">
+                        <a href="produit.html" value="">
+                        <img src="../ressources/pasteImage1679588884375.jpeg" alt="Article" class="profile-img">
+                        <ul class="profile__side">
+                            <img class="like_it" src="../ressources/coeur.png" alt=".">
+                        </ul>
+                        <div class="profile__info">
+                            <div class="profile__color"></div>
+                            <p class="profile__name">Infos produits</p>
+                            <p class="profile__price">10€</p>
+                            <button class="profile__see">Jeter un oeil</button>
+                        </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
         </section>
+
 
     </main>
 
@@ -87,6 +175,6 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

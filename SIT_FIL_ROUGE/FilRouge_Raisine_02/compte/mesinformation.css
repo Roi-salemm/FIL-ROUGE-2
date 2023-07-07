@@ -1,3 +1,64 @@
 .signalement{
     color: blue;
 }
+
+
+
+.mesInformations{
+    height: 500px;
+    width: 600px;
+    display: flex;
+    background: rgba(255,255,255,.3);
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 60px;
+
+    box-shadow: 4px 4px 60px 8px rgba(0,0,0,.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+h1{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    margin: 20px;
+}
+.user-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-bottom: 20px;
+    color: white;
+}
+.user-info__row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.btn__modif{
+    padding: 2px 20px;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 20px;
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+}
+
+
+
+

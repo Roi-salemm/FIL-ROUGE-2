@@ -12,7 +12,7 @@
     <title>Raisine</title>
 </head>
 <body>
-    <head class="">
+    <header class="">
         <div class="head">
             <!-- LOGO -->
             <div class="logo">
@@ -30,14 +30,105 @@
             <!-- image pannier -->
             <div class="pannier">
                 <div class="pannier__placement">
-                    <img class="pannier__hover" src="ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <img onclick="ouvrirPopup()" class="pannier__hover" src="ressources/panier.png" alt="ADD TO BASKET" width="50%" height="50%">
+
+                    <div id="popupContainer" class="popup">
+                        <div class="zero__0">Votre Pannier Actuel</div>
+                        <div class="popup__grid">
+
+                            <div class="one__3 rowSpace">Produit</div>
+                            <div class="one__4 rowSpace">Prix</div>
+                            <div class="one__5 rowSpace">Quantité</div>
+                            <div class="one__6 rowSpace">Total</div>
+
+                            <div class="two__1 rowSpace">X</div>
+                            <div class="two__2 rowSpace"><img src="" alt="image"></div>
+                            <div class="two__3 rowSpace">Salamandre</div>
+                            <div class="two__4 rowSpace">6.50€</div>
+                            <div class="two__5 rowSpace">1</div>
+                            <div class="two__6 rowSpace">6.50€</div>
+                        </div>
+                        <button onclick="fermerPopup()" class="fermerPopup">Fermer</button>
+                        <button onclick="fermerPopup()" class="fermerPopup">Continuer la commande</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </head>
+    </header>
 
     <main>
         <div class="trucalacon"></div>
+
+        <section>  
+            <!-- la partie bleu ciel avec le sous menu -->
+            <div class="mini_menu__banner">
+                <div>
+                    <p class="mini_menu__baseline leg">Découvrir en quelques mots</p>
+                </div>
+                <div class="space">
+                    <div class="mini_menu__produit">
+                        <a class="none" href="#legales"><p class="mini_menu__infos1">La Créatrice</p></a>
+                        <br>
+                        <a class="none" href="#vente"><p class="mini_menu__infos1">La Résine Epoxy</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Les informaitons -->
+        <section>
+            <section>
+                <div class="legales__placement__titre">
+                    <p class="legales__titre legales" id="legales">A propos de la créatrice</p>
+                </div>
+            </section>
+            <section>
+                <div class="legales__placement">
+                    <div class="legales__text legales__grid">
+                        <p class="legales__corps">Texte a venir</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <div class="legales__placement__titre">
+                    <p class="legales__titre vente" id="vente">A propos de la Raisine Epoxy</p>
+                </div>
+            </section>
+            <section>
+                <div class="legales__placement">
+                    <div class="legales__text legales__grid">
+                        <p class="legales__corps">La résine époxy est un matériau polyvalent utilisé pour créer des objets solides, durables et transparents. Elle est particulièrement utile pour la création de petits objets, tels que des bijoux, des porte-clés, des sous-verres et des figurines. La résine époxy est facile à utiliser et peut être mélangée avec des pigments, des paillettes et d'autres matériaux pour créer une large gamme d'effets décoratifs. La résine époxy durcit en quelques heures et forme une surface solide et lisse qui résiste aux rayures et aux chocs. Elle peut être moulée dans une variété de formes et est très résistante à l'eau, ce qui la rend idéale pour la création d'objets qui doivent résister à l'humidité.
+                            La résine époxy est également très polyvalente et peut être utilisée pour la création de nombreux autres objets, tels que des dessous de verre, des pendentifs, des figurines et même des décorations murales. Elle peut être mélangée avec d'autres matériaux, comme du bois, de la pierre ou des coquillages, pour créer des designs originaux et uniques.                            
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <!-- <section>
+                <div class="legales__placement__titre">
+                    <p class="legales__titre" id="cookie"></p>
+                </div>
+            </section> -->
+            <br>
+            <br>
+            <section>
+                <div class="legales__placement">
+                    <div class="legales__text legales__grid">
+                        <p class="legales__corps">En résumé, la résine époxy est un matériau parfait pour la création d'objets solides, durables et décoratifs. Si vous êtes un créateur passionné à la recherche d'un matériau de qualité pour vos petits projets, la résine époxy est certainement un excellent choix à considérer.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <div class="espace"></div>
+        </section>
 
     </main>
 
